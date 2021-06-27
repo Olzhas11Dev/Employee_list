@@ -1,7 +1,7 @@
 import React from "react"
 import "../style/employee-list.css"
 
-const Employee_list = (props) => {
+const EmployeeList = (props) => {
   
   return (
     <div className="employee-list">
@@ -24,13 +24,14 @@ const Employee_list = (props) => {
           </div>
           <div className="list-items">
             <div className="list-item">
-              <button className="delete">Delete</button>
+              <button onClick={()=>props.cleanList(props.item)} className="delete">Delete</button>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   )
 }
 
-export default Employee_list
+export default EmployeeList

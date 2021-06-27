@@ -1,9 +1,9 @@
 import { useState } from "react"
 
 import "./App.css"
-import Employee_form from "./components/Employee_form"
-import Employee_list from "./components/Employee_list"
-import Employee_imputs from "./components/Employee_inputs"
+import EmployeeForm from "./components/EmployeeForm"
+import EmployeeList from "./components/EmployeeList"
+import EmployeeInputs from "./components/EmployeeInputs"
 
 function App() {
   const [modal, setModal] = useState(false)
@@ -31,7 +31,7 @@ function App() {
 
   function showModal() {
     return (
-      <Employee_imputs
+      <EmployeeInputs
         input={input} setInput={setInput} addToArray={addToArray} 
         familyName={familyName} setFamilyName={setFamilyName}
         department={department} setDepartment={setDepartment}
@@ -41,13 +41,22 @@ function App() {
     )
   }
 
-  function getOneElement(e){
-    return <Employee_list item = {e}/>
+  function cleanList (elem){
+    let newArray = array.filter(function(k){
+      return k!==elem
+    })
+    setArray(newArray)
   }
-  
+
+  function getOneElement(e,key){
+    return <EmployeeList item = {e}
+    cleanList = {cleanList} 
+    key={key}/>
+  }
+
   return (
     <div className="App">
-      <Employee_form setModal={setModal} />
+      <EmployeeForm setModal={setModal} array={array}/>
       {modal ? showModal() : null}
       {array.map(getOneElement)}
       
