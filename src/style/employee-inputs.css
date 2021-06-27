@@ -1,0 +1,46 @@
+.employee-inputs {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(207, 207, 207);
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.employee-inputs h2 {
+  color: rgb(92, 92, 92);
+}
+.inputs-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+}
+.input-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.input-list input {
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+}
+
+.input-list button {
+  cursor: pointer;
+  height: 40px;
+  font-size: 12px;
+
+  border: none;
+  color: white;
+  background-color: rgb(238, 105, 105);
+  border-radius: 4px;
+}

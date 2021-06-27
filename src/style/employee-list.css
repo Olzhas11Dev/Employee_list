@@ -1,0 +1,40 @@
+.employee-list {
+  margin-top: 10px;
+}
+
+.list-title {
+  padding-left: 20px;
+  color: rgb(85, 85, 85);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: space-between;
+  border-bottom: grey 1px solid;
+  padding-bottom: 10px;
+}
+
+.list-items {
+  height: 100%;
+  width: 16%;
+}
+
+.list-item {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.delete {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px;
+  margin: 20px 0;
+  border: none;
+  color: white;
+  background-color: rgb(238, 105, 105);
+  border-radius: 4px;
+}
