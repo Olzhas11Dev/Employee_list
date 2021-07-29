@@ -7,7 +7,7 @@ const EmployeeForm = (props) => {
       <div className="container">
         <h2>Employee</h2>
         <div className="button-secion"> <button onClick={() => props.setModal(true)}>New Employee</button>
-        <div>Numbers of employees: {props.array.length}</div></div>
+        <div className='numbersEmpl' >Numbers of employees: {props.array.length}</div></div>
        
         <div className="header-title">
           <div className="header-items">

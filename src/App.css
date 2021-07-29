@@ -2,3 +2,23 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+
+@media (max-width: 900px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* @media (max-width: 400px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-form h2 {
+    font-size: 5px;
+  }
+  .header-title {
+    font-size: 8px;
+  }
+} */

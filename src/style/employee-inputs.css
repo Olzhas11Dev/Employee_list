@@ -44,3 +44,15 @@
   background-color: rgb(238, 105, 105);
   border-radius: 4px;
 }
+
+@media (max-height: 375px) {
+  .inputs-container {
+    margin: 10px auto;
+  }
+  .inputs-container h2 {
+    font-size: 20px;
+  }
+  .input-list input {
+    height: 20px;
+  }
+}

@@ -38,3 +38,15 @@
   background-color: rgb(238, 105, 105);
   border-radius: 4px;
 }
+
+@media (max-width: 450px) {
+  .list-title {
+    font-size: 8px;
+  }
+
+  .delete {
+    font-size: 8px;
+    padding: 2px;
+    height: 20px;
+  }
+}
